@@ -65,7 +65,9 @@ A declarative Jenkinsfile is included to automate:
 * Pushing it to Docker Hub.
 * Updating the Kubernetes deployment with the new tag.
 
-![Alt text](assets/pic7.png)
+![Alt text](assets/pic8.png)
+
+![Alt text](assets/pic9.png)
 
 ## K3s Setup
 

@@ -30,13 +30,13 @@ pipeline {
             }
         }
 
-        stage('Update Deployment') {
-      steps {
-        sh '''
-          sed -i "s|image: $IMAGE_NAME:.*|image: $IMAGE_NAME:$TAG|g" kubernetes-manifests/app/deployment.yaml
-          kubectl apply -f kubernetes-manifests/app/deployment.yaml
-        '''
-      }
-    }
+     stage('Update Deployment') {
+  steps {
+    sh '''
+      sed -i '' "s|image: $IMAGE_NAME:.*|image: $IMAGE_NAME:$TAG|g" kubernetes-manifests/app/deployment.yaml
+      kubectl apply -f kubernetes-manifests/app/deployment.yaml
+    '''
+  }
+}
   }
 }

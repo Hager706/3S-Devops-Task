@@ -69,6 +69,8 @@ A declarative Jenkinsfile is included to automate:
 
 ![Alt text](assets/pic9.png)
 
+![Alt text](assets/pic10.png)
+
 ## K3s Setup
 
 * Two virtual machines were created using Multipass.
